@@ -1,0 +1,106 @@
+ /* Global Styles */
+ body {
+    font-family: 'Calibri', sans-serif; /* Calibri as the default font */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+  }
+
+  .header-wrapper img {
+    width: 100px;   /* Set a fixed width */
+    height: 50px;   /* Set a fixed height */
+  }
+  
+  /* Header Styles */
+  .header-wrapper {
+    display: flex; /* Aligns items in a row */
+    justify-content: space-between; /* Pushes the logo and text to opposite ends */
+    align-items: center; /* Vertically center the content */
+    padding: 10px 35px; /* Adjust padding around the content */
+  }
+
+  .logoWrapper-Na8Fx {
+    flex: 0 0 auto; /* Ensures the logo doesn't stretch */
+    padding-top: 12px; /* Adds space above the logo */
+    padding-bottom: 12px; /* Adds space below the logo */
+  }
+
+  .header-text {
+    text-align: right; /* Align the text to the right */
+    white-space: nowrap; /* Ensures the text stays on one line */
+  }
+
+  .header-text p {
+    margin: 0; /* Removes any default margin from the paragraph */
+    font-size: 1.2rem; /* Adjust font size */
+    color: #333333; /* Text color */
+  }
+
+  /* Page Header Styles */
+  .page-header-container {
+    position: relative;
+    height: 100vh; /* Ensure the header container takes the full height of the screen */
+    overflow: hidden; /* Prevent any overflow outside the container */
+  }
+
+  .page-header {
+    position: relative;
+    height: 100%; /* Keeps the image's height proportionate */
+  }
+
+  .hero-image {
+    width: 100%; /* Ensure the image stretches to full width */
+    height: 100%; /* Ensure the image stretches to full height */
+    object-fit: cover; /* Cover the area without distorting the image */
+  }
+
+  .page-header-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background: rgba(0, 0, 0, 0.5);  Optional: overlay with a slight dark background */
+  }
+
+  .page-header-content {
+    position: absolute;
+    bottom: 120px; /* Adjust this value to control how far from the bottom the text is */
+    left: 120px; /* Adjust this value to control how far from the left side the text is */
+    text-align: left; /* Align the text to the left */
+  }
+
+  .page-header-content h1 {
+    color: white; /* Change the text color to white for contrast */
+    font-size: 3rem; /* Adjust the font size as needed */
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Dynamic Content Wrapper */
+  .dynamic-content-wrapper {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  .dynamic-content-wrapper h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .dynamic-content-wrapper {
+    padding: 20px; /* Add some padding for spacing */
+    margin: 0;
+    text-align: center; /* Center-align the text */
+    background-color: #f0f0f0; /* Light grey background */
+  }
+  
+  .dynamic-content-wrapper h1 {
+    font-size: 1.5rem; /* Reduced font size (adjust as necessary) */
+    color: #333; /* Text color */
+  }
+  
