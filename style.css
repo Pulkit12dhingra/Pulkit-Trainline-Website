@@ -3,6 +3,7 @@
     font-family: 'Calibri', sans-serif; /* Calibri as the default font */
     margin: 0; /* Remove default margins */
     padding: 0; /* Remove default padding */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
   }
 
   .header-wrapper img {
