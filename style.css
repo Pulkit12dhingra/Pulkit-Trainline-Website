@@ -33,6 +33,10 @@ body {
   height: 100vh; /* Ensure the header container takes the full height of the screen */
   overflow: hidden; /* Prevent any overflow outside the container */
 }
+.page-header {
+  background-color: #001848;
+  position: relative;
+}
 
 /* -----------*/
 /*
@@ -45,10 +49,6 @@ body {
 } 
 */
 
-.page-header {
-  position: relative;
-  height: 100%; /* Keeps the image's height proportionate */
-}
 
 .page-header .header-text {
   position: absolute;
