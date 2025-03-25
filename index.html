@@ -68,6 +68,25 @@
             </div>
         </section>
 
+<!-- Section 1 -->
+<section class="section position-relative">
+    <!-- Hero Image Container -->
+    <div class="position-relative text-center">
+        <!-- Darkened Filter Overlay with reduced opacity -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark" style="opacity: 0.3;"></div> <!-- Dark overlay with reduced opacity -->
+
+        <img src="https://www.thetrainline.com/cms/media/1255/man_phone-hero_mobile.jpg" class="img-fluid rounded w-100" alt="Trainline Image">
+
+        <!-- Overlay Text -->
+        <div class="position-absolute bottom-0 start-0 p-4 text-white fw-bold text-shadow">
+            <h1 class="display-4 d-none d-md-block">Hire Me</h1> <!-- Large screens -->
+            <h2 class="d-block d-md-none">Hire Me</h2> <!-- Smaller screens -->
+        </div>
+    </div>
+</section>
+
+
+
         <!-- Section 2 -->
         <section class="section container my-5">
             <div class="row align-items-center">
@@ -90,20 +109,139 @@
             </div>
         </section>
 
-
-
         <!-- Section 3 -->
-        <section class="section">
-            <h2>Why Trainline?</h2>
-            <p>Trainline revolutionizes train travel with seamless booking and innovative solutions.</p>
+        <section class="section container my-5">
+            <div class="row align-items-center">
+                <!-- Left: YouTube Video -->
+                <div class="col-md-6 d-flex justify-content-center">
+                    <div class="ratio ratio-16x9 w-100">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+                            title="YouTube video player" frameborder="0" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                
+                <!-- Right: Why Trainline Text -->
+                <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
+                    <h2 class="display-3 fw-bold text-success">Why Trainline?</h2>
+                    <p class="fs-5">
+                        Trainline revolutionizes train travel with seamless booking and innovative solutions.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <!-- Section 4 -->
-        <section class="section">
-            <h2>Let's Connect</h2>
-            <p>Interested in working together? Let's make travel smarter!</p>
+        <section class="section container my-5">
+            <!-- Title and Description -->
+            <h2 class="text-center display-4">Projects</h2>
+            <p class="text-center fs-5">
+                Here are some of the projects that I have been working on that aligns with the tech used in Trainline.
+            </p>
+
+            <!-- Project Frames -->
+            <div class="row mt-5">
+                <!-- Project 1 -->
+                <div class="col-md-4 mb-4">
+                    <a href="https://github.com/YOUR_GITHUB_REPO_1" target="_blank" class="text-decoration-none">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/400x250.png?text=Project+1" class="card-img-top" alt="Project 1 Image">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Project 1</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-4 mb-4">
+                    <a href="https://github.com/YOUR_GITHUB_REPO_2" target="_blank" class="text-decoration-none">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/400x250.png?text=Project+2" class="card-img-top" alt="Project 2 Image">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Project 2</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-md-4 mb-4">
+                    <a href="https://github.com/YOUR_GITHUB_REPO_3" target="_blank" class="text-decoration-none">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/400x250.png?text=Project+3" class="card-img-top" alt="Project 3 Image">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Project 3</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </section>
-    </div>
+
+        <!-- Section 5 -->
+        <section class="section container my-5">
+            <!-- Title and Description -->
+            <h2 class="text-center display-4">Let's Connect</h2>
+            <p class="text-center fs-5">
+                Interested in working together? Let's make travel smarter!
+            </p>
+
+            <!-- Contact Information -->
+            <div class="row">
+                <!-- Mobile Number -->
+                <div class="col-md-6 text-center">
+                    <h4>My Contact Information:</h4>
+                    <p>
+                        <a href="tel:+1234567890">+1 (234) 567-890</a>
+                    </p>
+                </div>
+
+                <!-- Email Address -->
+                <div class="col-md-6 text-center">
+                    <h4>Email Me:</h4>
+                    <p>
+                        <a href="mailto:your-email@example.com">your-email@example.com</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                        <!-- Name and Email fields next to each other -->
+                        <div class="mb-3 row">
+                            <!-- Name -->
+                            <div class="col-md-6">
+                                <label for="name" class="form-label text-center d-block">Your Name</label>
+                                <input type="text" class="form-control mx-auto d-block" id="name" name="name" required style="max-width: 60%;">
+                            </div>
+                            
+                            <!-- Email -->
+                            <div class="col-md-6">
+                                <label for="email" class="form-label text-center d-block">Your Email</label>
+                                <input type="email" class="form-control mx-auto d-block" id="email" name="email" required style="max-width: 60%;">
+                            </div>
+                        </div>
+                        
+                        <!-- Message area with reduced width -->
+                        <div class="mb-3">
+                            <label for="message" class="form-label text-center d-block">Your Message</label>
+                            <textarea class="form-control mx-auto d-block" id="message" name="message" rows="4" style="max-width: 82%;" required></textarea>
+                        </div>
+                    
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-success">Send Message</button>
+                    </form>
+                    
+                    
+                    
+                </div>
+            </div>
+        </section>
+
+        
 
     <!-- Footer -->
     <footer class="footer mt-4">
