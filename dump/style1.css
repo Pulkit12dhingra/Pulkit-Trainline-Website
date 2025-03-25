@@ -1,0 +1,261 @@
+/* Removed empty ruleset */
+@media (max-width: 767.9px) {
+    .sgp-fleet-template .header-container .page-header {
+        border-bottom-right-radius: 50px;
+        overflow-x: hidden;
+    }
+}
+@media (max-width: 767.9px) {
+  .page-header-content {
+      position: relative;
+  }
+}
+user agent stylesheet
+div {
+  box-sizing: border-box;
+    display: block;
+    unicode-bidi: isolate;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fff;
+    color: #192325;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, PingFang SC, Microsoft YaHei New, Microsoft Yahei, 微软雅黑, STXihei, 华文细黑, sans-serif;
+    line-height: 24px;
+}
+body, html {
+    font-size: 16px;
+}
+
+:root {
+    /* Ensure proper syntax and close brackets */
+}
+:root {
+    --dp_micro_line_height: 1rem;
+}
+:root {
+    --dp_micro_letter_spacing: 0em;
+    --dp_micro_font_size: 0.75rem;
+}
+:root {
+    --dp_mini_line_height: 1.25rem;
+}
+:root {
+    --dp_small_line_height: 1.25rem;
+    --dp_mini_letter_spacing: 0em;
+    --dp_mini_font_size: 0.875rem;
+}
+:root {
+    --dp_large_letter_spacing: 0em;
+    --dp_large_font_size: 1.125rem;
+    --dp_large_line_height: 1.5rem;
+    --dp_body_letter_spacing: 0em;
+    --dp_body_font_size: 1rem;
+    --dp_body_line_height: 1.5rem;
+    --dp_small_letter_spacing: 0em;
+    --dp_small_font_size: 0.9375rem;
+}
+:root {
+    --dp_title3_line_height: 1.5rem;
+}
+:root {
+    --dp_title3_font_size: 1.125rem;
+}
+:root {
+    --dp_title3_font_family: TLCircular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, PingFang SC, Microsoft YaHei New, Microsoft Yahei, 微软雅黑, STXihei, 华文细黑, sans-serif;
+    --dp_title3_letter_spacing: -0.01em;
+}
+:root {
+    --dp_title2_line_height: 1.75rem;
+}
+:root {
+    --dp_title2_font_family: TLCircular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, PingFang SC, Microsoft YaHei New, Microsoft Yahei, 微软雅黑, STXihei, 华文细黑, sans-serif;
+    --dp_title2_letter_spacing: -0.02em;
+    --dp_title2_font_size: 1.25rem;
+}
+:root {
+    --dp_title1_line_height: 1.75rem;
+}
+:root {
+    --dp_title1_font_family: TLCircular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, PingFang SC, Microsoft YaHei New, Microsoft Yahei, 微软雅黑, STXihei, 华文细黑, sans-serif;
+    --dp_title1_letter_spacing: -0.02em;
+    --dp_title1_font_size: 1.5rem;
+}
+:root {
+    --dp_hero_line_height: 2.5rem;
+}
+:root {
+    --dp_hero_font_family: TLCircular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, PingFang SC, Microsoft YaHei New, Microsoft Yahei, 微软雅黑, STXihei, 华文细黑, sans-serif;
+    --dp_hero_letter_spacing: -0.02em;
+    --dp_hero_font_size: 2rem;
+}
+:root {
+    --dp_transitions_base_easing_standard_productive: cubic-bezier(0.68,0,0.32,1);
+    --dp_transitions_base_easing_standard_expressive: cubic-bezier(0.83,0,0.17,1);
+    --dp_transitions_base_easing_entrance_productive: cubic-bezier(0.32,1,0.68,1);
+    --dp_transitions_base_easing_entrance_expressive: cubic-bezier(0.22,1,0.36,1);
+    --dp_transitions_base_easing_exit_productive: cubic-bezier(0.32,0,0.68,0);
+    --dp_transitions_base_easing_exit_expressive: cubic-bezier(0.64,0,0.78,0);
+    --dp_transitions_base_duration_fast1: 70ms;
+    --dp_transitions_base_duration_fast2: 110ms;
+    --dp_transitions_base_duration_medium1: 150ms;
+    --dp_transitions_base_duration_medium2: 240ms;
+    --dp_transitions_base_duration_slow1: 400ms;
+    --dp_transitions_base_duration_slow2: 700ms;
+    --dp_transitions_base_delay_productive: 240ms;
+    --dp_transitions_base_delay_expressive: 700ms;
+}
+:root {
+    --dp_s2: 0.125rem;
+    --dp_s4: 0.25rem;
+    --dp_s8: 0.5rem;
+    --dp_s12: 0.75rem;
+    --dp_s16: 1rem;
+    --dp_s24: 1.5rem;
+    --dp_s32: 2rem;
+    --dp_s40: 2.5rem;
+    --dp_s48: 3rem;
+    --dp_s64: 4rem;
+    --dp_s80: 5rem;
+    --dp_s96: 6rem;
+}
+:root {
+    --dp_shadows_normal_lifting: 0px 2px 6px 0px rgba(5, 45, 18, .12), 0px 0px 4px 0px rgba(5, 45, 18, .12);
+    --dp_shadows_normal_floating: 0px 4px 8px 0px rgba(5, 45, 18, .12), 0px 0px 4px 0px rgba(5, 45, 18, .12);
+    --dp_shadows_normal_flying: 0px 4px 16px 0px rgba(5, 45, 18, .12), 0px 0px 4px 0px rgba(5, 45, 18, .12);
+    --dp_shadows_inverted_lifting: 0px -2px 6px 0px rgba(5, 45, 18, .12), 0px 0px 4px 0px rgba(5, 45, 18, .12);
+    --dp_shadows_inverted_floating: 0px -4px 8px 0px rgba(5, 45, 18, .12), 0px 0px 4px 0px rgba(5, 45, 18, .12);
+    --dp_shadows_inverted_flying: 0px -4px 16px 0px rgba(5, 45, 18, .12), 0px 0px 4px 0px rgba(5, 45, 18, .12);
+}
+:root {
+    --dp_opacity_0_02: 0.02;
+    --dp_opacity_0_04: 0.04;
+    --dp_opacity_0_08: 0.08;
+    --dp_opacity_0_12: 0.12;
+    --dp_opacity_0_24: 0.24;
+    --dp_opacity_0_4: 0.4;
+    --dp_opacity_0_48: 0.48;
+    --dp_opacity_0_64: 0.64;
+    --dp_opacity_0_8: 0.8;
+    --dp_opacity_1: 1;
+}
+:root {
+    --dp_app_negative_brightest: #ffeff0;
+    --dp_app_negative_brighter: #ffe5e6;
+    --dp_app_negative_bright: #ff9da1;
+    --dp_app_negative_mid: #ef370e;
+    --dp_app_negative_dull: #c70d00;
+    --dp_app_negative_duller: #950a00;
+    --dp_app_negative_dullest: #730303;
+    --dp_app_warning_brightest: #fdf7c9;
+    --dp_app_warning_brighter: #fff6b1;
+    --dp_app_warning_bright: #fcec83;
+    --dp_app_warning_mid: #ffc508;
+    --dp_app_warning_dull: #d58000;
+    --dp_app_warning_duller: #955200;
+    --dp_app_warning_dullest: #502e00;
+    --dp_app_info_brightest: #ebf2ff;
+    --dp_app_info_brighter: #dfebff;
+    --dp_app_info_bright: #78a3ff;
+    --dp_app_info_mid: #004ff9;
+    --dp_app_info_dull: #0035a9;
+    --dp_app_info_duller: #002472;
+    --dp_app_info_dullest: #001848;
+    --dp_app_positive_brightest: #e1fbd7;
+    --dp_app_positive_brighter: #d6f3cb;
+    --dp_app_positive_bright: #73db5e;
+    --dp_app_positive_mid: #11ac23;
+    --dp_app_positive_dull: #0c732b;
+    --dp_app_positive_duller: #0f4c23;
+    --dp_app_positive_dullest: #052d12;
+    --dp_app_selection_brightest: #f3f1fd;
+    --dp_app_selection_brighter: #ece8fc;
+    --dp_app_selection_bright: #d5cef7;
+    --dp_app_selection_mid: #9786e6;
+    --dp_app_selection_dim: #4c4fdf;
+    --dp_app_selection_dull: #2332c4;
+    --dp_app_selection_duller: #2d00b1;
+    --dp_app_selection_dullest: #160078;
+    --dp_app_text_base: #192325;
+    --dp_app_text_subtle: #3f4b4e;
+    --dp_app_text_subdued: #5b6466;
+    --dp_app_text_inverted: #fff;
+    --dp_app_text_base_inverted: #fff;
+    --dp_app_text_negative: #c70d00;
+    --dp_app_text_warning: #955200;
+    --dp_app_text_positive: #0c732b;
+    --dp_app_text_disabled: #5b6466;
+    --dp_app_text_urgency_medium: #955200;
+    --dp_app_text_urgency_high: #c70d00;
+    --dp_app_link_base: #004ff9;
+    --dp_app_link_hover: #0035a9;
+    --dp_app_link_pressed: #001848;
+/* Removed invalid line */
+}
+:root {
+    --dp_font_weight_regular: 400;
+    --dp_font_weight_medium: 500;
+    --dp_font_weight_semibold: 600;
+    --dp_font_weight_bold: 700;
+}
+:root {
+    --dp_r2: 0.125rem;
+    --dp_r4: 0.25rem;
+    --dp_r8: 0.5rem;
+    --dp_r12: 0.75rem;
+    --dp_r16: 1rem;
+}
+:root {
+    --header-color: rgba(25, 35, 37, .32);
+    --text-color: rgba(25, 35, 37, .16);
+}
+:root {
+    --account-button-min-width: 108px;
+    --account-icon-width: 32px;
+    --account-icon-height: 32px;
+}
+:root {
+    --negative--spacing-spacer_1: calc(var(--spacing-spacer_1)* -1);
+}
+:root {
+    --arrow-size: 20px;
+    --arrow-offset: 10px;
+    --arrow-border: 1px solid var(--dp_comp_box_shadow);
+    --overlay-max-height: 800px;
+}
+:root {
+    --border-radius-r2: 2px;
+    --border-radius-r4: 4px;
+    --border-radius-r8: 8px;
+    --border-radius-r12: 12px;
+    --border-radius-r16: 16px;
+    --border-radius-r20: 20px;
+}
+:root {
+    --spacing-spacer_1: 4px;
+    --spacing-spacer_2: 8px;
+    --spacing-spacer_3: 12px;
+    --spacing-spacer_4: 16px;
+    --spacing-spacer_5: 24px;
+    --spacing-spacer_6: 32px;
+    --spacing-spacer_7: 40px;
+    --spacing-spacer_8: 48px;
+    --spacing-spacer_9: 64px;
+    --spacing-spacer_10: 80px;
+    --spacing-spacer_11: 96px;
+}
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.15;
+}
+
+.header-text h1 {
+  color: #0BCEAF; /* Apply your desired color */
+  font-size: 3rem; /* Adjust font size as needed */
+  margin: 0; /* Remove default margin */
+}
+

@@ -1,0 +1,8 @@
+trainline's website is very complex and everything is related to one another and clubbed together in a single html file
+I don't know if in any case they have to update something or change some design how will they do it.
+I tried to extract certain classes and even entire html but was unsuccessful. 
+I was facing issues aligning the text and images and with CSS they have, I don't think it will be easy to understand everything and update the code
+or eeven pin-point certain things in the code.
+Thus to speed up the process, I will be developing the entire website on my own, using the design inspirations from the original site
+
+Let's see how that goes
