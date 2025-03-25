@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,61 +31,109 @@
             padding: 15px 0;
             font-size: 16px;
         }
+
         /* Section Styling */
         .section {
             padding: 50px 20px;
             text-align: center;
         }
+
         .section:nth-child(odd) {
             background-color: #f8f9fa; /* Light Gray */
         }
+
         .section:nth-child(even) {
             background-color: #e9ecef; /* Slightly Darker Gray */
         }
+
+        /* Scrolling Notification Styles */
+        .scrolling-notification {
+            display: inline-block;
+            white-space: nowrap;
+            animation: scroll-left 20s linear infinite;
+            font-size: 18px;
+            color: white;
+            font-weight: bold;
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Marquee container styling */
+        .marquee-container {
+            background-color: #00b388; /* Trainline Green */
+            color: white;
+            padding: 4px 0;
+            text-align: center;
+            position: relative;
+            z-index: 1000; /* Ensure it stays above other content */
+            margin-top: 80px; /* Add margin-top to make it visible under the fixed header */
+        }
     </style>
+
 </head>
+
 <body>
 
-    <header class="d-flex align-items-center py-3 px-4">
-        <picture>
+    <header class="d-flex align-items-center py-3 px-4 fixed-top bg-white shadow-sm">
+        <!-- Left: Trainline Logo -->
+        <picture class="me-auto">
             <source srcset="https://static.trainlinecontent.com/content/vul/logos/trainline-mint.svg" media="(min-width: 992px)">
             <img data-testid="trainline-logo-image" class="logo-oVgUw img-fluid" alt="Trainline homepage" src="https://static.trainlinecontent.com/content/vul/logos/trainline-mint.svg">
         </picture>
+
+        <!-- Right: Social Media Links -->
+        <div class="d-flex align-items-center ms-3">
+            <!-- GitHub Logo -->
+            <a href="https://github.com/your-username" target="_blank" class="me-3">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Octicons-mark-github.svg" alt="GitHub" style="width: 30px; height: 30px;">
+            </a>
+
+            <!-- Personal Website Logo -->
+            <a href="https://www.yourwebsite.com" target="_blank" class="me-3">
+                <img src="https://yourwebsite.com/logo.png" alt="Personal Website" style="width: 30px; height: 30px;">
+            </a>
+
+            <!-- LinkedIn Logo -->
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="me-3">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo_2013.svg" alt="LinkedIn" style="width: 30px; height: 30px;">
+            </a>
+        </div>
     </header>
 
+    <!-- Marquee/Notification Section -->
+    <div class="marquee-container">
+        <div class="scrolling-notification">
+            This website is designed to attract Trainline recruiters and managers. The goal is to showcase my skills, dedication, and passion. I've worked hard to build this portfolio to demonstrate my commitment and eagerness for an opportunity at Trainline!
+        </div>
+    </div>
+
     <div class="container">
+
 
         <!-- Section 1 -->
         <section class="section position-relative">
             <!-- Hero Image Container -->
             <div class="position-relative text-center">
+                <!-- Darkened Filter Overlay with reduced opacity -->
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark" style="opacity: 0.3;"></div> <!-- Dark overlay with reduced opacity -->
+
                 <img src="https://www.thetrainline.com/cms/media/1255/man_phone-hero_mobile.jpg" class="img-fluid rounded w-100" alt="Trainline Image">
-                
+
                 <!-- Overlay Text -->
-                <div class="position-absolute top-50 start-50 translate-middle text-white fw-bold text-shadow">
-                    <h1 class="display-4 d-none d-md-block">Hire Me</h1> <!-- Large screens -->
-                    <h2 class="d-block d-md-none">Hire Me</h2> <!-- Smaller screens -->
+                <div class="position-absolute" style="top: 80%; left: 20%; transform: translate(-50%, -50%); padding: 0 2rem; text-align: left; color: white;">
+                    <h1 class="display-4 d-none d-md-block fw-bold text-shadow">Hire Me</h1> <!-- Large screens -->
+                    <h2 class="d-block d-md-none fw-bold text-shadow">Hire Me</h2> <!-- Smaller screens -->
+                    
                 </div>
             </div>
         </section>
-
-<!-- Section 1 -->
-<section class="section position-relative">
-    <!-- Hero Image Container -->
-    <div class="position-relative text-center">
-        <!-- Darkened Filter Overlay with reduced opacity -->
-        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark" style="opacity: 0.3;"></div> <!-- Dark overlay with reduced opacity -->
-
-        <img src="https://www.thetrainline.com/cms/media/1255/man_phone-hero_mobile.jpg" class="img-fluid rounded w-100" alt="Trainline Image">
-
-        <!-- Overlay Text -->
-        <div class="position-absolute bottom-0 start-0 p-4 text-white fw-bold text-shadow">
-            <h1 class="display-4 d-none d-md-block">Hire Me</h1> <!-- Large screens -->
-            <h2 class="d-block d-md-none">Hire Me</h2> <!-- Smaller screens -->
-        </div>
-    </div>
-</section>
-
 
 
         <!-- Section 2 -->
@@ -92,18 +141,16 @@
             <div class="row align-items-center">
                 <!-- Left: Hire Me Heading & Text -->
                 <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
-                    <h2 class="display-3 fw-bold text-success">Hire Me</h2>
+                    <h2 class="display-3 fw-bold text-success">About Me</h2>
                     <p class="fs-5">
                         Hi, I'm Pulkit! Passionate about technology, innovation, and making travel easier.
                     </p>
                 </div>
-                
+
                 <!-- Right: YouTube Video -->
                 <div class="col-md-6 d-flex justify-content-center">
                     <div class="ratio ratio-16x9 w-100">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
-                            title="YouTube video player" frameborder="0" allowfullscreen>
-                        </iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -115,12 +162,10 @@
                 <!-- Left: YouTube Video -->
                 <div class="col-md-6 d-flex justify-content-center">
                     <div class="ratio ratio-16x9 w-100">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
-                            title="YouTube video player" frameborder="0" allowfullscreen>
-                        </iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
-                
+
                 <!-- Right: Why Trainline Text -->
                 <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
                     <h2 class="display-3 fw-bold text-success">Why Trainline?</h2>
@@ -217,39 +262,44 @@
                                 <label for="name" class="form-label text-center d-block">Your Name</label>
                                 <input type="text" class="form-control mx-auto d-block" id="name" name="name" required style="max-width: 60%;">
                             </div>
-                            
+
                             <!-- Email -->
                             <div class="col-md-6">
                                 <label for="email" class="form-label text-center d-block">Your Email</label>
                                 <input type="email" class="form-control mx-auto d-block" id="email" name="email" required style="max-width: 60%;">
                             </div>
                         </div>
-                        
+
                         <!-- Message area with reduced width -->
                         <div class="mb-3">
                             <label for="message" class="form-label text-center d-block">Your Message</label>
                             <textarea class="form-control mx-auto d-block" id="message" name="message" rows="4" style="max-width: 82%;" required></textarea>
                         </div>
-                    
+
                         <!-- Submit Button -->
                         <button type="submit" class="btn btn-success">Send Message</button>
                     </form>
-                    
-                    
-                    
                 </div>
             </div>
         </section>
 
-        
+        <!-- Footer -->
+        <footer class="footer fixed-bottom bg-dark text-white py-3">
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- Footer Text -->
+                <p class="mb-0">&copy; 2025 Pulkit | Inspired by <a href="https://www.thetrainline.com/about-us" target="_blank" class="text-white">Trainline's About Us</a> page</p>
 
-    <!-- Footer -->
-    <footer class="footer mt-4">
-        <p>&copy; 2025 Pulkit | Inspired by Trainline</p>
-    </footer>
+                <!-- Resume Link/Button -->
+                <a href="https://www.yourwebsite.com/your-resume.pdf" target="_blank" class="btn btn-outline-light btn-sm">
+                    View My Resume
+                </a>
+            </div>
+        </footer>
+
 
     <!-- jQuery and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+5hb7xHj8HY7uM13M/sj8z7/njwF"></script>
 
 </body>
+
 </html>
