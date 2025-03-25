@@ -107,58 +107,35 @@
             .section:nth-child(even) {
                 background-color: #e9ecef; /* Slightly Darker Gray */
             }
-    
-        /* Scrolling Notification Styles */
-        .scrolling-notification {
-            display: inline-block;
-            white-space: nowrap;
-            animation: scroll-left 20s linear infinite;
-            font-size: 18px;
-            color: white;
-            font-weight: bold;
-            padding: 10px 0; /* Add some padding to make it more readable */
-            width: 100%;  /* Ensure it takes full width of the container */
-            overflow: hidden;  /* Prevent the text from overflowing */
-        }
+            /* Customize the modal for better visibility */
+.modal-content {
+    background-color: #00b388; /* Trainline Green */
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
 
-        @keyframes scroll-left {
-            0% {
-                transform: translateX(100%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
+/* Close button styling */
+.btn-close {
+    background-color: white;
+    opacity: 1;
+}
 
-        /* Adjust animation speed and font size based on screen width */
-        @media (max-width: 768px) {
-            .scrolling-notification {
-                font-size: 4vw; /* Larger font size for smaller screens */
-                animation: scroll-left 15s linear infinite; /* Slower speed for smaller screens */
-                width: 100%; /* Ensure it's always 100% of the screen width */
-            }
-        }
 
-        @media (max-width: 576px) {
-            .scrolling-notification {
-                font-size: 6vw; /* Even larger font size for very small screens */
-                animation: scroll-left 18s linear infinite; /* Slow down the animation for better readability */
-                width: 100%; /* Always 100% width for smaller screens */
-            }
-        }
-
-        /* Marquee container styling */
-        .marquee-container {
-            background-color: #00b388; /* Trainline Green */
-            color: white;
-            padding: 4px 0;
-            text-align: center;
-            position: relative;
-            z-index: 1000; /* Ensure it stays above other content */
-            margin-top: 80px; /* Add margin-top to make it visible under the fixed header */
-        }
 
         </style>
+        <!-- Bootstrap 5 JS (required for modal functionality) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybK3dZGdK1rLgqQd6t0I7l0CZr2aYrh/1YxaS/fvv7g7g1sf2" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0WnpdP0q6Q3z4O6vI9F+J4xTUM8Y3kjPR/hO2glUfsDgnz+8" crossorigin="anonymous"></script>
+
+<script>
+  // Show the modal when the page is fully loaded
+  window.addEventListener('load', function () {
+    var myModal = new bootstrap.Modal(document.getElementById('notificationModal'));
+    myModal.show();
+  });
+</script>
+
     
     </head>
 </head>
@@ -193,12 +170,24 @@
         </div>
     </header>
 
-    <!-- Marquee Notification -->
-    <div class="marquee-container">
-        <div class="scrolling-notification">
-            This website is developed to attract Trainline recruiters and managers. The aim is to showcase my skills. I've worked hard to build this portfolio to demonstrate my dedication and passion to get an opportunity at Trainline!
+<!-- Modal Popup for Notification -->
+<div class="modal fade" id="notificationModal" tabindex="-1" aria-labelledby="notificationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="notificationModalLabel">Important Notification</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <p>This website is developed to attract Trainline recruiters and managers. The aim is to showcase my skills and passion for innovation. I've worked hard to build this portfolio, and I hope to get an opportunity to contribute to Trainline's amazing journey!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Got it!</button>
+        </div>
+      </div>
     </div>
+  </div>
+  
 
     <div class="container">
         <!-- Section 1 -->
