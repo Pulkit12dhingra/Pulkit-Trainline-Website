@@ -116,8 +116,16 @@
         .closebtn:hover {
             color: black;
         }
+        .project-image {
+            width: 100%; /* Ensure it fills the width of the parent */
+            height: 200px; /* Set a fixed height for all images */
+            object-fit: cover; /* Make sure the image covers the area without distorting */
+        }
+
 
     </style>
+<!-- Include Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 </head>
 
@@ -132,19 +140,19 @@
 
         <!-- Right: Social Media Links -->
         <div class="d-flex align-items-center ms-3">
-            <!-- GitHub Logo -->
+            <!-- GitHub Icon Link -->
             <a href="https://github.com/your-username" target="_blank" class="me-3">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Octicons-mark-github.svg" alt="GitHub" style="width: 30px; height: 30px;">
+                <i class="fab fa-github" style="font-size: 30px; color: #00b388;"></i>
             </a>
 
-            <!-- Personal Website Logo -->
-            <a href="https://www.yourwebsite.com" target="_blank" class="me-3">
-                <img src="https://yourwebsite.com/logo.png" alt="Personal Website" style="width: 30px; height: 30px;">
-            </a>
-
-            <!-- LinkedIn Logo -->
+            <!-- LinkedIn Icon Link -->
             <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="me-3">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo_2013.svg" alt="LinkedIn" style="width: 30px; height: 30px;">
+                <i class="fab fa-linkedin" style="font-size: 30px; color: #00b388;"></i>
+            </a>
+
+            <!-- Portfolio Website Button -->
+            <a href="https://www.yourwebsite.com" target="_blank" class="me-3" title="My Portfolio" style="display: inline-block; padding: 10px 15px; background-color: #00b388; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
+                Portfolio
             </a>
         </div>
     </header>
@@ -237,42 +245,46 @@
 
             <!-- Project Frames -->
             <div class="row mt-5">
-                <!-- Project 1 -->
+                <!-- Project 2 -->
                 <div class="col-md-4 mb-4">
-                    <a href="https://github.com/YOUR_GITHUB_REPO_1" target="_blank" class="text-decoration-none">
+                    <a href="https://github.com/Pulkit12dhingra/Trainline-Customer-Support-Chatbot" target="_blank" class="text-decoration-none">
+                        <!-- Project Card -->
                         <div class="card">
-                            <img src="https://via.placeholder.com/400x250.png?text=Project+1" class="card-img-top" alt="Project 1 Image">
+                            <img src="https://static.trainlinecontent.com/content/cx/pictos/Laptop_Phone_Information.svg" class="card-img-top project-image" alt="Project 2 Image">
                             <div class="card-body text-center">
-                                <h5 class="card-title">Project 1</h5>
+                                <h5 class="card-title">Trainline Customer Support Chatbot</h5>
                             </div>
                         </div>
                     </a>
                 </div>
 
-                <!-- Project 2 -->
+                <!-- Project 1 -->
                 <div class="col-md-4 mb-4">
-                    <a href="https://github.com/YOUR_GITHUB_REPO_2" target="_blank" class="text-decoration-none">
+                    <a href="https://github.com/Pulkit12dhingra/-Train-Ticket-Recommendation-System/tree/main" target="_blank" class="text-decoration-none">
                         <div class="card">
-                            <img src="https://via.placeholder.com/400x250.png?text=Project+2" class="card-img-top" alt="Project 2 Image">
+                            <img src="https://static.trainlinecontent.com/content/cx/pictos/Calendar_Phone_E-ticket.svg" class="card-img-top project-image" alt="Project 1 Image">
                             <div class="card-body text-center">
-                                <h5 class="card-title">Project 2</h5>
+                                <h5 class="card-title">Ticket Recommender System</h5>
                             </div>
                         </div>
                     </a>
                 </div>
+
+                
 
                 <!-- Project 3 -->
                 <div class="col-md-4 mb-4">
-                    <a href="https://github.com/YOUR_GITHUB_REPO_3" target="_blank" class="text-decoration-none">
+                    <a href="https://github.com/Pulkit12dhingra/Train-Delay-Prediction-System" target="_blank" class="text-decoration-none">
                         <div class="card">
-                            <img src="https://via.placeholder.com/400x250.png?text=Project+3" class="card-img-top" alt="Project 3 Image">
+                            <img src="https://static.trainlinecontent.com/content/cx/pictos/Phone_SearchResults_Train_Coach.svg" class="card-img-top project-image" alt="Project 3 Image">
                             <div class="card-body text-center">
-                                <h5 class="card-title">Project 3</h5>
+                                <h5 class="card-title">Train Delay Prediction System</h5>
                             </div>
                         </div>
                     </a>
                 </div>
             </div>
+
         </section>
 
         <!-- Section 5 -->
@@ -297,7 +309,7 @@
                 <div class="col-md-6 text-center">
                     <h4>Email Me:</h4>
                     <p>
-                        <a href="mailto:your-email@example.com">your-email@example.com</a>
+                        <a href="mailto:your-email@example.com">pulkit12dhingra@gmail.com</a>
                     </p>
                 </div>
             </div>
@@ -341,7 +353,7 @@
                 <p class="mb-0">&copy; 2025 Pulkit | Inspired by <a href="https://www.thetrainline.com/about-us" target="_blank" class="text-white">Trainline's About Us</a> page</p>
 
                 <!-- Resume Link/Button -->
-                <a href="https://www.linkedin.com/in/your-profile" class="btn btn-light text-dark">View My Resume</a>
+                <a href="resume/Pulkit_resume_trainline.pdf"  target="_blank" class="btn btn-light text-dark">View My Resume</a>
             </div>
         </footer>
 
